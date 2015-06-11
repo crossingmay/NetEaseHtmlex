@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>幻灯片</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.slide{
+		margin-top: 20px;
+		margin-left: 40px;
+		width: 200px;
+		height: 100px;
+		background-color: lightblue;
+		position: relative;
+	}
+	.pointer{
+		width: 45px;
+		height: 10px;
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+	}
+	i{
+		float: left;
+		width: 10px;
+		height: 10px;
+		margin-left: 5px;
+		text-align: center;
+		background-color: #000;
+		border-radius: 50%;
+	}
+	
+	.current{
+		background-color: #fff;
+	}
+	</style>
+</head>
+<body>
+	<div class="slide">
+		<!-- 图片省略 -->
+		<!-- 以下是指示器 -->
+		<div class="pointer">
+			<i class="current"></i>
+			<i></i>
+			<i></i>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航栏练习</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	
+	.main{
+		margin: 20px;
+		width: 572px;
+		height: 300px;
+		border:solid 1px #999;
+	}
+	.title li	a{
+		text-decoration: none;
+		font: 14px "微软雅黑";
+		color: black;
+	}
+	li{		
+		display: block;
+		text-align: center;
+ 		float: left;
+		background-color: #f1f1f1;
+		border-right:solid 1px #cecece;
+		border-bottom:solid 1px #cecece;
+		border-top-style: none;
+		width:190px;
+		height:40px;
+		line-height: 40px;
+	}
+	.title li:last-child{
+		border-right: none;
+	}
+	ul{
+		list-style: none;
+	}
+
+	.title li:hover{
+		background-color: white;
+		border-bottom-style: none;
+
+	}
+	.content{
+		padding: 10px;
+		display: block;
+		float: left;
+		width:554px;
+
+	}
+	#course_content,#plan_content,#skill_content{
+		display: block;
+		padding: 20px;
+	}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="title">
+			<ul>
+				<li><a href="#course_content">课程</a></li>
+				<li><a href="#plan_content">学习计划</a></li>
+				<li><a href="#skill_content">技能图谱</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div id="course_content"><p>课程内容</p></div>
+			<div id="plan_content"><p>学习计划内容</p></div>
+			<div id="skill_content"><p>技能图谱内容</p></div>
+		</div>
+	</div>
+</body>
+</html>

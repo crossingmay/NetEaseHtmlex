@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>两列自适应布局</title>
+	<style type="text/css">
+	/*margin方法*/
+	.parent{
+		color: white;
+		line-height: 200px;
+		text-align: center;
+		font-size:40px;
+	}
+
+	.side{
+		float: left;
+		background-color: #be0712;
+		width: 200px;
+	}
+	.main{
+		margin-left: 210px;
+		background-color: #5182bb;
+		min-width: 200px;		
+	}
+
+
+
+
+	/*flex方法*/
+/*	.flex{
+		display: flex;
+		flex: 1;
+	}
+
+	.parent{
+		
+		text-align: center;
+		color: white;
+		font-size: 40px;
+		line-height: 200px;
+
+	}
+	.side{
+		background-color: #be0712;
+		width: 200px;
+		flex-grow:0;
+		flex-shrink:1;
+	}
+	.main{
+		background-color: #5182bb;
+		margin-left: 10px;
+		flex-grow: 1;
+		flex-shrink: 1;
+	}*/
+
+	</style>
+</head>
+<body>
+	<div class="parent flex">
+		<div class="side">侧栏</div>
+		<div class="main">主栏</div>
+	</div>
+</body>
+</html>

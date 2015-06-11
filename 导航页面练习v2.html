@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航栏练习v2</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.main{
+		width: 572px;
+		margin: 20px;
+		height: 300px;
+		border: solid 1px #999;
+		font: 14px "微软雅黑";
+		position: relative;
+		
+	}
+	ul{
+		list-style-type: none;
+	}
+	input{
+		opacity: 0;
+		position: absolute;
+	}
+
+	input[type=radio]:checked{
+		background-color: white;
+	}
+	li{
+		float: left;
+	}
+	label{
+		display: block;
+		width:190px;
+		height:30px;
+		background-color: #f1f1f1;
+		line-height: 30px;
+		text-align: center;
+		border:solid 1px #cecece;		
+		border-top: none;
+		border-left: none;
+	}
+	input:checked + label{
+		background-color: white;
+		border-bottom-style: none;
+	}
+	.content{
+		display: none;
+		text-align: left;
+		padding: 20px;
+		position: absolute;
+		left: 20px;
+		right: 20px;
+
+	}
+	input:checked ~ .content{
+		display: block;
+	}
+	li:last-child > label{
+		border-right: none;
+	}
+
+	
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="nav">
+			<ul>
+				<li>
+					<input type="radio" name="tab" id="course" checked="checked">
+					<label for="course">课程</label>
+					<div class="content">课程内容</div>
+				</li>
+				<li>
+					<input type="radio" name="tab" id="plan">
+					<label for="plan">学习计划</label>
+					<div class="content">学习计划内容</div>
+				</li>
+				<li>
+					<input type="radio" name="tab" id="skill">
+					<label for="skill">技能图谱</label>
+					<div class="content">技能图谱内容</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>
